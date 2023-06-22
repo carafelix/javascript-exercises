@@ -11,7 +11,7 @@ const removeFromArray = function(arr, ...num) {
         for (j = 0; j < manyNumArr.length; j++) {
 
             if (manyNumArr[j] === numArr[i]) {
-                numArr.push('x')
+                numArr.splice(i,1)
             }
 
         }
