@@ -1,12 +1,22 @@
-const removeFromArray = function(arr, num) {
+const removeFromArray = function(arr, ...num) {
 
-    const numArray = arr;
+   // make pseudocode and plan it. don't stress
 
-    for (i = 0; i < numArray.length; i++) {
-        if (numArray[i] === num) {
-            numArray.splice(i, 1)
+    const numArr = arr;
+    const manyNumArr = num;
+
+
+    for (i = 0; i < numArr.length; i++) {
+
+        for (j = 0; j < manyNumArr.length; j++) {
+
+            if (manyNumArr[j] === numArr[i]) {
+                numArr.push('x')
+            }
+
         }
-    } return numArray
+
+    } return numArr
 };
 
 // Do not edit below this line
