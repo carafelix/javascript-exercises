@@ -7,7 +7,6 @@ const removeFromArray = function(arr, ...num) {
     // what if a compared number is < than its predecesor
     const manyNumArr = num.sort(function(a, b){return a - b}); 
 
-
     for (i = 0; i < numArr.length; i++) {
 
         for (j = 0; j < manyNumArr.length; j++) {
@@ -15,9 +14,7 @@ const removeFromArray = function(arr, ...num) {
             if (manyNumArr[j] === numArr[i]) {
                 numArr.splice(i,1)
             }
-
         }
-
     } return numArr
 };
 
