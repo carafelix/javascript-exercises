@@ -1,4 +1,4 @@
-const sumAll = function(num, numi) {
+const sumAll = function(num, numi) {  //this solution works for any number to any other number. not only from 1 to x
 
     const min = Math.min(num,numi);
     const max = Math.max(num,numi);
@@ -17,6 +17,8 @@ const sumAll = function(num, numi) {
         }
     
 };
+
+// another solution instead of looping is using Gauss formula: n * (n + x) / 2;  |  n being the ending number, and 'x' the starting number.
 
 // Do not edit below this line
 module.exports = sumAll;
